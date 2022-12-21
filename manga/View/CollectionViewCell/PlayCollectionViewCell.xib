@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PlayCollectionViewCell" customModule="manga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="429" height="227"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="429" height="227"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sW4-eR-NMi">
+                        <rect key="frame" x="0.0" y="0.0" width="429" height="227"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play_title_image" translatesAutoresizingMaskIntoConstraints="NO" id="4cu-Pj-vPh">
+                                <rect key="frame" x="0.0" y="80" width="429" height="147"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8f-wp-kdN">
+                                <rect key="frame" x="30" y="10" width="369" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgY-wS-mnG">
+                                        <rect key="frame" x="71.5" y="10" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RoD-lf-xu7">
+                                        <rect key="frame" x="53" y="35.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8X7-oN-AAK">
+                                        <rect key="frame" x="256" y="10" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ksa-bE-KdV">
+                                        <rect key="frame" x="274" y="35.5" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="GgY-wS-mnG" firstAttribute="top" secondItem="o8f-wp-kdN" secondAttribute="top" constant="10" id="7kZ-kt-U7b"/>
+                                    <constraint firstItem="8X7-oN-AAK" firstAttribute="top" secondItem="o8f-wp-kdN" secondAttribute="top" constant="10" id="RjL-3Z-uDG"/>
+                                    <constraint firstItem="GgY-wS-mnG" firstAttribute="centerX" secondItem="o8f-wp-kdN" secondAttribute="centerX" multiplier="0.5" id="Uh2-cM-fTb"/>
+                                    <constraint firstItem="Ksa-bE-KdV" firstAttribute="centerX" secondItem="o8f-wp-kdN" secondAttribute="centerX" multiplier="1.6" id="W5d-Tv-zBD"/>
+                                    <constraint firstItem="RoD-lf-xu7" firstAttribute="centerX" secondItem="o8f-wp-kdN" secondAttribute="centerX" multiplier="0.4" id="Xvh-pH-CjE"/>
+                                    <constraint firstItem="Ksa-bE-KdV" firstAttribute="top" secondItem="8X7-oN-AAK" secondAttribute="bottom" constant="5" id="e96-VU-B5f"/>
+                                    <constraint firstItem="RoD-lf-xu7" firstAttribute="top" secondItem="GgY-wS-mnG" secondAttribute="bottom" constant="5" id="eMl-SV-Yer"/>
+                                    <constraint firstAttribute="height" constant="70" id="fnT-gg-VDR"/>
+                                    <constraint firstItem="8X7-oN-AAK" firstAttribute="centerX" secondItem="o8f-wp-kdN" secondAttribute="centerX" multiplier="1.5" id="fzw-x0-D2j"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mrM-tK-R0L">
+                                <rect key="frame" x="0.0" y="80" width="429" height="147"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0g7-SE-Nx3">
+                                        <rect key="frame" x="0.0" y="0.0" width="429" height="147"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0g7-SE-Nx3" secondAttribute="bottom" id="2ze-Y4-rgI"/>
+                                    <constraint firstAttribute="trailing" secondItem="0g7-SE-Nx3" secondAttribute="trailing" id="PG7-Qa-No8"/>
+                                    <constraint firstItem="0g7-SE-Nx3" firstAttribute="top" secondItem="mrM-tK-R0L" secondAttribute="top" id="c8G-ep-tE1"/>
+                                    <constraint firstItem="0g7-SE-Nx3" firstAttribute="leading" secondItem="mrM-tK-R0L" secondAttribute="leading" id="e0m-Ot-fI0"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4cu-Pj-vPh" firstAttribute="top" secondItem="o8f-wp-kdN" secondAttribute="bottom" id="8gD-Qz-XQq"/>
+                            <constraint firstItem="o8f-wp-kdN" firstAttribute="leading" secondItem="sW4-eR-NMi" secondAttribute="leading" constant="30" id="KFx-5h-CWS"/>
+                            <constraint firstAttribute="bottom" secondItem="mrM-tK-R0L" secondAttribute="bottom" id="OvG-Cc-ctS"/>
+                            <constraint firstItem="4cu-Pj-vPh" firstAttribute="leading" secondItem="sW4-eR-NMi" secondAttribute="leading" id="S8Y-MI-oQA"/>
+                            <constraint firstAttribute="trailing" secondItem="4cu-Pj-vPh" secondAttribute="trailing" id="Sop-gY-52O"/>
+                            <constraint firstAttribute="trailing" secondItem="o8f-wp-kdN" secondAttribute="trailing" constant="30" id="UJo-o8-5jH"/>
+                            <constraint firstItem="mrM-tK-R0L" firstAttribute="leading" secondItem="sW4-eR-NMi" secondAttribute="leading" id="ZDp-VZ-L3g"/>
+                            <constraint firstAttribute="trailing" secondItem="mrM-tK-R0L" secondAttribute="trailing" id="chI-k9-7NY"/>
+                            <constraint firstAttribute="bottom" secondItem="4cu-Pj-vPh" secondAttribute="bottom" id="fff-PC-B29"/>
+                            <constraint firstItem="mrM-tK-R0L" firstAttribute="top" secondItem="o8f-wp-kdN" secondAttribute="bottom" id="ifD-XW-K6N"/>
+                            <constraint firstItem="o8f-wp-kdN" firstAttribute="top" secondItem="sW4-eR-NMi" secondAttribute="top" constant="10" id="oLk-zR-cha"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="sW4-eR-NMi" secondAttribute="trailing" id="hOf-zr-v5a"/>
+                <constraint firstAttribute="bottom" secondItem="sW4-eR-NMi" secondAttribute="bottom" id="hTO-HM-cHj"/>
+                <constraint firstItem="sW4-eR-NMi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ovF-PK-AKj"/>
+                <constraint firstItem="sW4-eR-NMi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pdP-6A-v0l"/>
+            </constraints>
+            <size key="customSize" width="429" height="227"/>
+            <connections>
+                <outlet property="Image_Lock" destination="0g7-SE-Nx3" id="K2J-n4-X2M"/>
+                <outlet property="Image_Play" destination="4cu-Pj-vPh" id="SYL-wG-Kza"/>
+                <outlet property="Level_Label" destination="GgY-wS-mnG" id="gWW-Eo-pID"/>
+                <outlet property="Type_Label" destination="8X7-oN-AAK" id="HWe-hD-9Cq"/>
+                <outlet property="ViewLabel" destination="o8f-wp-kdN" id="8zO-4G-Slj"/>
+                <outlet property="ViewTong" destination="sW4-eR-NMi" id="kfv-7c-SzM"/>
+                <outlet property="View_Lock" destination="mrM-tK-R0L" id="CIq-xb-z86"/>
+                <outlet property="lock_Label" destination="RoD-lf-xu7" id="S4e-ep-zaW"/>
+                <outlet property="number_of_complete" destination="Ksa-bE-KdV" id="fjo-bl-XEf"/>
+            </connections>
+            <point key="canvasLocation" x="184.78260869565219" y="65.290178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="play_title_image" width="337" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
